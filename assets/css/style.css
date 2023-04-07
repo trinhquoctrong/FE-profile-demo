@@ -298,6 +298,9 @@
   height: 180px;
   border-radius: 50%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 30px;
   margin: 34px 0;
   animation-duration: 1s;
