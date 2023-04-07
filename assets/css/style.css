@@ -91,6 +91,22 @@
 .header .inner-social ul li:hover a i {
   background: var(--color-two);
 }
+
+@media (max-width: 1199.98px) {
+  .header .inner-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header .container {
+    justify-content: center;
+  }
+
+  .header .inner-social {
+    display: none;
+  }
+}
 /* End Header */
 
 
@@ -150,12 +166,38 @@
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
+
+@media (max-width: 991.98px) {
+  .home .order {
+    order: 1;
+  }
+
+  .home .inner-image {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home .inner-content .inner-title h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .home .inner-content .inner-title h2 {
+    font-size: 32px;
+  }
+
+  .home .inner-image img {
+    height: 300px;
+  }
+}
 /* End Home */
 
 
 /* Box Head */
 .box-head {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .box-head .inner-title {
@@ -173,7 +215,14 @@
   text-align: center;
   margin-top: 20px;
 }
+
+@media (max-width: 575.98px) {
+  .box-head .inner-title {
+    font-size: 28px;
+  }
+}
 /* End Box Head */
+
 
 /* About */
 .about {
@@ -212,12 +261,31 @@
 .about .inner-content .button {
   margin-top: 40px;
 }
+
+@media (max-width: 991.98px) {
+  .about .inner-image {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about .inner-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about .inner-image {
+    height: 220px;
+  }
+}
+
 /* End About */
 
 
 /* Skill */
 .skill {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .skill .wow {
@@ -229,9 +297,6 @@
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
   padding: 30px;
   margin: 34px 0;
@@ -240,15 +305,12 @@
   animation-iteration-count: infinite;
 }
 
-.skill .inner-image {
+.skill .box-icon .inner-image {
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
-.skill .inner-image img {
+.skill .box-icon .inner-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -260,6 +322,12 @@
   }
   to {
     opacity: 0.6;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .skill .box-icon {
+    text-align: center;
   }
 }
 /* End Skill */
@@ -276,7 +344,6 @@
 }
 
 .project .box-project {
-  width: 21vw;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
@@ -287,7 +354,7 @@
 .project .box-project img {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 4/3;
   object-fit: cover;
 }
 
@@ -340,30 +407,49 @@
 
 /* Education */
 .education {
+  padding: 0 20px;
   margin-bottom: 100px;
 }
 
-.education .university-name  {
-  font-size: 24px;
-  position: relative;
-  color: var(--color-two);
+.education .text-right {
+  text-align: right;
+}
+
+.education .margin-custom {
   margin-bottom: 30px;
 }
 
-.education .university-name::before {
+.education .fa-graduation-cap {
+  font-size: 24px;
+  color: var(--color-two);
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.education .university-name  {
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+  color: var(--color-two);
+  margin-bottom: 20px;
+}
+
+/* .education .university-name::before {
   content: "\f19d";
   font-weight: 900;
   color: var(--color-two);
   font-family: "Font Awesome 6 Free";
   position: absolute;
+  display: block;
   top: 0;
   left: -3vw;
-}
+} */
 
 .education .university-study-time {
   font-size: 16px;
   font-weight: 400;
   color: var(--color-two);
+  display: inline-block;
 }
 
 .education .box-item {
@@ -483,6 +569,10 @@
   letter-spacing: 0.25px;
 }
 
+.contact .communication .inner-body .inner-connect .line-height {
+  line-height: 1.5;
+}
+
 .contact .form-contact .inner-head .inner-title {
   font-size: 24px;
   margin-bottom: 36px;
@@ -527,5 +617,24 @@
 .contact .form-contact .inner-body textarea:focus {
   box-shadow: var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000);
   outline: 2px solid #38bdf8;
+}
+
+@media (max-width: 991.98px) {
+  .contact .communication .inner-head {
+    text-align: center;
+  }
+
+  .contact .margin-custom {
+    margin-bottom: 20px;
+  }
+
+  .contact .form-contact .inner-head {
+    text-align: center;
+  }
+
+  .contact .form-contact .inner-body input,
+  .contact .form-contact .inner-body textarea {
+    width: 100%;
+  }
 }
 /* End Contact */
