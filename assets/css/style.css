@@ -178,6 +178,10 @@
     order: 1;
   }
 
+  .home .inner-content {
+    text-align: center;
+  }
+
   .home .inner-image {
     text-align: center;
   }
@@ -195,7 +199,7 @@
   }
 
   .home .inner-image img {
-    height: 300px;
+    max-width: 300px;
   }
 }
 /* End Home */
