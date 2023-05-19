@@ -7,5 +7,5 @@ function openTabProject2() {
 }
 
 function openTabProject3() {
-  window.open("https://front-end-project-mini-1-trinh-quoc-trong.vercel.app", "_blank");
+  window.open("https://fe-profile-trinhquoctrong.vercel.app/", "_blank");
 }
